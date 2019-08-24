@@ -1,0 +1,15 @@
+table { 
+    width: 20%;
+    border-collapse: collapse;
+}
+
+div {
+    display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.color {
+    background-color: red;
+}
