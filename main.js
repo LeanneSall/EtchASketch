@@ -19,7 +19,8 @@ var addingColor = function()
 
     d.forEach(function(div){
         div.addEventListener('mouseover', function hover(){
-            div.style.background = "#D46855";
+            div.classList.remove("remove");
+            div.classList.add("color");
         })
     })
 
@@ -28,14 +29,15 @@ var addingColor = function()
 var clearColor = function() {
 
     let d = document.querySelectorAll("div");
-
+    console.log("hi");
     d.forEach(function(div){
-        div.addEventListener('onClick', function hover(){
-            div.style.background = "#00000";
+        div.classList.remove("color");
+        div.classList.add("remove");     
         })
-    })
-
+    
+    addingColor();
 }
+
 
 
 
