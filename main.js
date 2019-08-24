@@ -3,12 +3,14 @@
 
 let makeGrid = function() {
     const table = document.getElementById("table");
+    const start = document.getElementById("start");
 
     for(i=0;i<256;i++){
         table.appendChild(document.createElement("div"));
                 
     }
-    
+    addingColor();
+    start.onclick = null;
 }
 
   
